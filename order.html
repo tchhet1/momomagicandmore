@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Momo Magic and More</title>
+        <title>Momo Magic and More</title>
+        <link rel = "icon" href = "images/slider-MomosNmore.png" 
+        type = "image/x-icon">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
@@ -13,36 +15,70 @@
 	<body>
 		
 		<nav class="navbar navbar-expand-sm bg-warning navbar-light fixed-top">
-            <!--
-			<button class="navbar-toggler float-xs-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        -->
+            
+			
+        
             
             <a class="navbar-brand" href="index.html">
                 <img id="logo" class="d-inline-block mr-1" alt="Logo" src="images/slider-MomosNmore.png" width="100px"> 
             </a>
-            <div class="nav-button">
-                <a class="navbar-btn" href="">
-                    <button class="btn btn-outline-danger btn-lg navbar-btn" type="button">Order Online</button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+         
+            <div class="nav-button collapse navbar-collapse" id="collapsibleNavbar">
+                
+                <a class="navbar-btn" href="order.html">
+                    <button class="btn btn-danger btn-md navbar-btn" type="button">Order Online</button>
+                </a>
+            
+                <a class="navbar-btn" href="tel:4693669929">
+                    <button class="btn btn-danger btn-md navbar-btn" type="button">Call us</button>
                 </a>
             </div>
+        
+        
+           
+                
+           
+            <!-- 
+			<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            	<ul class="navbar-nav">
+                	<li class="nav-item">
+						<a class="nav-link" href="index.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="menu.html">Our Menu</a>
+					</li>
+				  	<li class="nav-item">
+                    	<a class="nav-link" href="gallery.html">Food Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+                </ul>
+            </div>
+            -->
             
 		</nav>
 		
 
        
 		<div class="container-fluid hero-image-container">
+            <img class="img-fluid hero-image" src="images/momo-heroimage.jpeg" width="100%" height="100%">
            
+            <div class="image-margin">
+                
                 <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
                     <div id = "buttontest" class="btn-group mr-2" role="group" aria-label="First group">
-                        <a href="https://www.clover.com/online-ordering/momo-magic-and-more-plano">
+                        <a href="https://www.clover.com/online-ordering/momo-magic-and-more-plano" target="_blank">
                             <button class="btn btn-danger btn-lg image-btn" type="button">Pick up</button>
                         </a>
                     </div>
 
                     <div class="btn-group" role="group" aria-label="Second group">
-                        <a href="">
+                        <a href="https://food.google.com/chooseprovider?restaurantId=/g/11r_yf2jcq&g2lbs=ALgbXSp8N4eQfU-riVU1svU-Il2V3VHZu9Cwrf10ooJc727XVjhjUCFWt6M57ZH-cMB66csVYrH6&hl=en-US&gl=us&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=IKmMYYmJCNa1qtsPjfqouAE&sei=CXY5sDfaDRGBERZ13jgym6p_&utm_campaign&utm_source=search&addressId&orderType=1&partnerId&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA%2CAH&dineInLocationId">
                             <button class="btn btn-danger btn-lg image-btn" type="button">Delivery</button>
                         </a>
                         
@@ -50,15 +86,33 @@
                    
                 </div>
             </div>
+            
+                    
+                <!--
+                <div class="col-6 col-md-6 text-center">
+                    <a class="navbar-btn" href="">
+                        <button class="btn btn-danger btn-lg btn-image" type="button">Carryout</button>
+                    </a>
+                </div>
+                
+                <div class="col-6 col-md-6 text-center">
+                    <a class="navbar-btn" href="">
+                        <button class="btn btn-danger btn-lg btn-image" type="button">Delivery</button>
+                    </a>
+                </div>
+                
+            </div> -->
         </div>
         
-       
+		
         <footer class="footer-07">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-12 text-center">
                         <h2 class="footer-heading"><a href="#" class="logo">Momo Magic and More</a></h2>
-                        <p>4006 W Plano Parkway Suite 160 <br> Plano, TX 75093</p>
+                        <p>4006 W Plano Parkway Suite 160 <br> Plano, TX 75093 <br>
+                            <a href="tel:4693669929">PH: 469-366-9929</a>
+                        </p>
 						<!-- 
 						<ul class="ftco-footer-social p-0">
                             <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
@@ -78,7 +132,12 @@
 			</div>
 		</footer>
        
-		<!-- Reference to Bootstrap Javascript -->
+        <!-- Reference to Bootstrap Javascript -->
+        <script type="text/javascript">
+            function showMessage() {
+                alert("Delivery Service will be available on Friday, October 29th 2021");
+            }
+        </script>
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.min.js"></script>
