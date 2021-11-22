@@ -1,0 +1,145 @@
+.nav-button {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+p {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+   font-size: 20px;
+}
+.heading {
+    font-size: 50px;
+    margin-top: 20px;
+  
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: #BD0200;
+}
+
+.sub-heading {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 30px;
+    color: #F89124;
+}
+
+.price-heading {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.menu-items {
+    padding-left: 20px;
+}
+
+/*
+.hero-image::before{
+    content: '';
+    background: url('images/momo-heroimage.jpeg') 
+        no-repeat center center/cover;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    opacity: 0.8;
+    width: 100vw;
+    height: 300px;
+    z-index: -1;
+}
+
+.image-margin {
+    margin-top: 15%;
+}
+
+*/
+
+.container-fluid.hero-image-container {
+    padding-right: 0px !important;
+    padding-left: 0px !important; 
+    position: relative;  
+    
+}
+
+.hero-image {
+    opacity: 0.8;
+}
+
+.image-margin {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+  }
+
+
+  
+
+  .image-btn {
+      padding-left: 3rem !important;
+      padding-right: 3rem !important;
+  }
+
+  ul li {
+      list-style-type: none;
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 20px;
+  }
+
+  @media only screen and (max-width: 733px) {
+    
+    #buttontest {
+      display: block;
+      margin-bottom: 20px;
+      width: 100%;
+      
+    }
+
+    .image-margin {
+        position: absolute;
+        top: 60%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        cursor: pointer;
+      }
+  }
+
+  @media only screen and (max-width: 576px) {
+    
+    .hero-image-container {
+        margin-top: 12.5%;
+    }
+
+    .image-margin {
+        position: absolute;
+        top: 60%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        cursor: pointer;
+      }
+
+      .image-btn {
+        padding-top: 5px !important;
+        padding-bottom:  5px !important;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+      }
+  }
+
+  @media only screen and (max-width: 320px) {
+    
+    .hero-image-container {
+        margin-top: 15%;
+    }
+
+    
+
+      
+  }
+
