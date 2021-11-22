@@ -1,3 +1,6 @@
+html, body {
+    height: 100%;
+}
 .nav-button {
     position: absolute;
     right: 0;
@@ -49,26 +52,6 @@ p {
     padding-left: 20px;
 }
 
-/*
-.hero-image::before{
-    content: '';
-    background: url('images/momo-heroimage.jpeg') 
-        no-repeat center center/cover;
-    position: absolute;
-    top: 70px;
-    left: 0px;
-    opacity: 0.8;
-    width: 100vw;
-    height: 300px;
-    z-index: -1;
-}
-
-.image-margin {
-    margin-top: 15%;
-}
-
-*/
-
 .container-fluid.hero-image-container {
     padding-right: 0px !important;
     padding-left: 0px !important; 
@@ -76,22 +59,15 @@ p {
     
 }
 
-.hero-image {
-    opacity: 0.8;
-}
-
 .image-margin {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 45%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     border: none;
     cursor: pointer;
   }
-
-
-  
 
   .image-btn {
       padding-left: 3rem !important;
@@ -103,6 +79,41 @@ p {
       font-family: "Playfair Display", serif;
       font-style: italic;
       font-size: 20px;
+      margin-bottom: 20px;
+  }
+
+  
+
+  .hero {
+      background-image: url("images/momo-heroimage.jpeg");
+/* Full height */
+      height: 100%;
+
+/* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .hero ul li a {
+      font-family: "Poppins", Arial, sans-serif;
+  }
+
+  .btn-order-page {
+      width: 100%;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .hero {
+       
+        /* Full height */
+              height: 50%;
+        
+        /* Center and scale the image nicely */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
   }
 
   @media only screen and (max-width: 733px) {
@@ -113,6 +124,17 @@ p {
       width: 100%;
       
     }
+
+    .hero {
+       
+        /* Full height */
+              height: 50%;
+        
+        /* Center and scale the image nicely */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
 
     .image-margin {
         position: absolute;
@@ -148,6 +170,8 @@ p {
     .hero-image-container {
         margin-top: 12.5%;
     }
+
+   
 
     .image-margin {
         position: absolute;
